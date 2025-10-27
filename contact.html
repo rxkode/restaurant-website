@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Savory Delight</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Savory Delight</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="info-item">
+                            <h4>📍 Location</h4>
+                            <p>Riverside Drive<br>Nairobi, P.O BOX 12345</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>📞 Phone</h4>
+                            <p>(+254) 794-416429</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>📧 Email</h4>
+                            <p>info@savorydelight.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>🕒 Hours</h4>
+                            <p>Monday - Friday: 11am - 10pm<br>
+                            Saturday - Sunday: 10am - 11pm</p>
+                        </div>
+                    </div>
+
+                    <div class="reservation-form">
+                        <h3>Make a Reservation</h3>
+                        <form id="reservationForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Date *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Time *</label>
+                                    <input type="time" id="time" name="time" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select...</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7+">7+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Special Requests</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Allergies, dietary restrictions, special occasions, etc."></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit Reservation</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- GOOGLE MAP SECTION -->
+                <div class="map-section">
+                    <h3>Find Us</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8457744442567!2d36.798953274965796!3d-1.2754901359706138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1728bfc77787%3A0xf8b17f6e8cf3724a!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1730000000000!5m2!1sen!2ske" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>📞 (+254) 794-416429</p>
+                    <p>📧 info@savorydelight.com</p>
+                    <p>📍 Riverside Drive, Nairobi</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 11am - 10pm</p>
+                    <p>Saturday - Sunday: 10am - 11pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Facebook | Instagram | Tiktok | X </p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Savory Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form validation and submission handler
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your reservation request! We will contact you shortly to confirm.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
