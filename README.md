@@ -3,7 +3,7 @@
 A modern fine dining website built with HTML and CSS.
 
 ## 🌐 Live Preview
-Visit the live site: [Savory Delight on GitHub Pages](https://rkangata.github.io/restaurant-website/)
+Visit the live site: [Savory Delight on GitHub Pages](https://rxkode.github.io/restaurant-website/)
 
 ## 🧱 Structure
 - `index.html` – Home page
